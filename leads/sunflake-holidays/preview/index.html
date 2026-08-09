@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SunFlake Holidays — We search. You travel. You relax.</title>
+<style>
+  :root{
+    --coral:#ff7a4a;
+    --amber:#ffb454;
+    --alpine:#3d8bff;
+    --ink:#232228;
+    --cream:#fffaf4;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.5;
+  }
+  header{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 24px;
+    background:#fff;
+    position:sticky;top:0;z-index:10;
+    border-bottom:1px solid #f1e9df;
+  }
+  header img{height:38px}
+  .lang{
+    display:flex;align-items:center;gap:6px;
+    font-size:14px;color:#666;
+    border:1px solid #e5ddd0;border-radius:20px;
+    padding:6px 14px;
+  }
+  .hero{
+    position:relative;
+    min-height:78vh;
+    display:flex;align-items:center;
+    background:url('assets/hero.jpg') center/cover no-repeat;
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(20,20,30,.15),rgba(20,20,30,.55));
+  }
+  .hero-content{
+    position:relative;z-index:2;
+    color:#fff;
+    max-width:640px;
+    padding:0 8vw;
+  }
+  .hero-content h1{
+    font-size:clamp(2.2rem,5vw,3.6rem);
+    font-weight:700;
+    letter-spacing:-0.02em;
+    text-shadow:0 2px 20px rgba(0,0,0,.25);
+  }
+  .hero-content p{
+    margin-top:16px;
+    font-size:1.15rem;
+    opacity:.95;
+    max-width:480px;
+  }
+  .cta{
+    display:inline-block;margin-top:28px;
+    background:linear-gradient(90deg,var(--coral),var(--amber));
+    color:#fff;font-weight:600;font-size:1rem;
+    padding:14px 30px;border-radius:30px;
+    box-shadow:0 8px 24px rgba(255,122,74,.35);
+  }
+  section{padding:64px 8vw}
+  .section-title{
+    text-align:center;font-size:1.9rem;font-weight:700;margin-bottom:8px;
+  }
+  .section-sub{
+    text-align:center;color:#7a7580;max-width:480px;margin:0 auto 40px;
+  }
+  .how{
+    display:flex;justify-content:center;
+  }
+  .how img{max-width:640px;width:100%}
+  .stories{
+    background:#fff;
+  }
+  .story-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;max-width:900px;margin:0 auto;
+  }
+  .story-card{
+    border:1px dashed #e5ddd0;border-radius:16px;
+    padding:28px 20px;text-align:center;color:#b3aca0;
+    background:#fdfaf5;
+  }
+  .story-card .placeholder-icon{
+    width:36px;height:36px;margin:0 auto 12px;
+    border-radius:50%;
+    background:linear-gradient(135deg,var(--coral),var(--alpine));
+    opacity:.25;
+  }
+  .quiz-teaser{
+    text-align:center;
+    background:linear-gradient(135deg,#fff2e6,#eaf3ff);
+    border-radius:24px;
+    margin:0 8vw;
+    padding:60px 8vw;
+  }
+  .quiz-teaser h2{font-size:1.8rem;font-weight:700}
+  .quiz-teaser p{color:#7a7580;margin-top:10px;max-width:440px;margin-left:auto;margin-right:auto}
+  .quiz-mock{
+    margin-top:32px;max-width:420px;margin-left:auto;margin-right:auto;
+    background:#fff;border-radius:16px;padding:24px;
+    box-shadow:0 12px 40px rgba(0,0,0,.08);
+    text-align:left;
+  }
+  .quiz-mock .q{font-weight:600;margin-bottom:14px}
+  .quiz-mock .opt{
+    display:block;border:1px solid #eee;border-radius:10px;
+    padding:12px 16px;margin-bottom:10px;color:#555;font-size:.95rem;
+  }
+  footer{
+    text-align:center;padding:40px 24px;color:#a39d92;font-size:.85rem;
+  }
+  .badge{
+    display:inline-block;background:#fff3ea;color:var(--coral);
+    font-size:.75rem;font-weight:700;letter-spacing:.04em;
+    padding:4px 12px;border-radius:20px;margin-bottom:16px;text-transform:uppercase;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="assets/logo-lockup.png" alt="SunFlake Holidays">
+  <div class="lang">🌐 EN</div>
+</header>
+
+<div class="hero">
+  <div class="hero-content">
+    <h1>We search.<br>You travel.<br>You relax.</h1>
+    <p>Your own holiday matchmaker — from snow-capped peaks to sun-soaked shores, and everything in between.</p>
+    <a class="cta" href="#quiz">Find your match</a>
+  </div>
+</div>
+
+<section class="how">
+  <div>
+    <div class="section-title" style="margin-bottom:32px">How SunFlake works</div>
+    <img src="assets/icons-strip.png" alt="Search, match, relax">
+  </div>
+</section>
+
+<section class="stories">
+  <div class="section-title">Real trips. Real travellers.</div>
+  <div class="section-sub">Our travel story board — uncut stories from people SunFlake has matched, coming soon.</div>
+  <div class="story-grid">
+    <div class="story-card"><div class="placeholder-icon"></div>A traveller's story goes here</div>
+    <div class="story-card"><div class="placeholder-icon"></div>A traveller's story goes here</div>
+    <div class="story-card"><div class="placeholder-icon"></div>A traveller's story goes here</div>
+  </div>
+</section>
+
+<section class="quiz-teaser" id="quiz">
+  <span class="badge">Preview only — not live yet</span>
+  <h2>Let's find your perfect holiday</h2>
+  <p>A short quiz matches you to a holiday built around what you actually want.</p>
+  <div class="quiz-mock">
+    <div class="q">What sounds like you right now?</div>
+    <span class="opt">🏔️ Somewhere cold and quiet</span>
+    <span class="opt">🏖️ Sun, sand, and doing nothing</span>
+    <span class="opt">🌍 Surprise me completely</span>
+  </div>
+</section>
+
+<footer>
+  SunFlake Holidays — this is a design preview. Nothing above is wired up yet.
+</footer>
+
+</body>
+</html>
